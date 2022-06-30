@@ -1,0 +1,348 @@
+*  {
+    box-sizing: border-box;
+}
+
+.body {
+    position: relative;
+    margin: 0 auto;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: antiquewhite;
+}
+
+.body-container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 120px;
+    max-width: 1440px;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.header-container, .nav-list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    z-index: 1;
+}
+
+.header-overlay {
+    position: absolute;
+    width: 100vw;
+    height: 90px;
+    top: 0;
+    left: 0;
+    background-color: rgba(242, 120, 92, 0.7);
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+    z-index: 0;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list > li {
+    padding: 0 30px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+ 
+.logo-div {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background-image: url('./assets/logo.png');
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-family: 'Magra';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
+.button {
+    width: 103px;
+    height: 41px;
+    background: #0D606F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+}
+
+.button-text {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+/* Section 1: Preview */
+.preview {
+    display: inline-block;
+}
+
+.preview-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100vw;
+    height: 765px;
+    background-image: url(../travel/assets/preview_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    z-index: -1;
+}
+
+.main-content {
+    position: relative;
+    float: left;
+    min-width: 0;
+    min-height: 0;
+    max-width: 895px;
+    margin-bottom: 300px;
+
+}
+
+.h1 {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    color: #FFFFFF;
+}
+
+.main-p {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 46px;
+    color: #FFFFFF;
+}
+
+.main-a {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2785C;
+}
+
+.gray-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    padding: 15px;
+}
+
+.button-start_planning {
+    width: 228px;
+    height: 59px;
+}
+
+/* Section 2: Steps */
+
+.steps-content {
+    display: flex;
+    flex-direction: column;
+}
+.h2 {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+}
+
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.steps-container_icon, .steps-container_text {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.steps-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.steps-icon_1 {
+    background-image: url(./assets/steps_1.png);
+}
+
+.steps-icon_2 {
+    background-image: url(./assets/steps_2.png);
+}
+
+.steps-icon_3 {
+    background-image: url(./assets/steps_3.png);
+}
+
+.steps-text {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+}
+
+.steps-text_2 {
+    padding-left: 30px;
+}
+
+/* Section 3: Destinations */
+
+.destinations {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 2520px;
+    padding-top: 195px;
+    margin-left: -630px;
+
+}
+
+.slider-item_1 {
+    background-image: url(./assets/slider-item_1.png);
+}
+
+.slider-item_2 {
+    background-image: url(./assets/slider-item_2.png);
+}
+
+.slider-item_3 {
+    background-image: url(./assets/slider-item_3.png);
+} 
+.slider-item {
+    width: 800px;
+    height: 800px;
+    margin: 0 30px;
+
+}
+
+.find-more_div {
+    width: auto;
+    text-align: center;
+    margin: 950px 0 0 0;
+}
+
+/* Section 4: Stories */
+
+.stories-container {
+    margin: 0;
+    width: 100vw;
+    height: 1445px;
+}
+
+.stories-background {
+    position: relative;
+    width: 100vw;
+    height: 1330px;
+    margin-top: -1270px;
+    background-image: url('./assets/travel-stories_item.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.stories-overlay {
+    position: relative;
+    bottom: 60px;
+    left: 0;
+    width: 100vw;
+    height: 1270px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Footer */
+
+.footer-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+    background-color: aquamarine;
+}
+
+.free_space {
+    width: 25%;
+    height: 100%;
+}
+
+.footer-text-container {
+    width: 50%;
+    text-align: center;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.footer-social {
+    display: flex;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    margin: 0 20px;
+}
+
+.social-icon_1 {
+    background-image: url(./assets/social-icon_1.png);
+}
+
+.social-icon_2 {
+    background-image: url(./assets/social-icon_2.png);
+}
+
+.social-icon_3 {
+    background-image: url(./assets/social-icon_3.png);
+}
+
